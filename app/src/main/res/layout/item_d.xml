@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/rect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/tx_d"
+        android:paddingRight="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="9"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:textSize="20sp"
+        android:text="hjsgdjksa"/>
+
+</LinearLayout>
