@@ -35,13 +35,6 @@
             android:textSize="20sp"
             android:text="+"/>
 
-        <ImageView
-            android:id="@+id/refresh"
-            android:src="@drawable/re"
-            android:layout_margin="2dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"

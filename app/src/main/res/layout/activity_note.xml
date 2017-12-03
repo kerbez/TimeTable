@@ -14,7 +14,8 @@
         android:orientation="horizontal"
         >
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="14"
             android:layout_height="match_parent"
             android:textSize="20sp"
             android:text="мухи"
@@ -22,6 +23,15 @@
             android:layout_gravity="center"
             android:gravity="center_horizontal"
             />
+        <TextView
+            android:id="@+id/slony_plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="+"/>
     </LinearLayout>
     <GridView
         android:id="@+id/gv_n_l"
@@ -36,7 +46,8 @@
         android:layout_weight="0.5"
         android:background="#0288B4">
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="15"
             android:layout_height="match_parent"
             android:textSize="20sp"
             android:text="слоны"
@@ -44,6 +55,7 @@
             android:layout_gravity="center"
             android:gravity="center_horizontal"
             />
+
     </LinearLayout>
     <GridView
         android:id="@+id/gv_n_b"

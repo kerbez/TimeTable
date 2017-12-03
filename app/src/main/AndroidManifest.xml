@@ -23,7 +23,9 @@
         <activity android:name=".WeekViewActivity" />
         <activity android:name=".PlusActivity" />
         <activity android:name=".DelActivity" />
-        <activity android:name=".dvViewActivity"></activity>
+        <activity android:name=".dvViewActivity" />
+        <activity android:name=".wvViewActivity" />
+        <activity android:name=".NotePlusActivity"></activity>
     </application>
 
 </manifest>

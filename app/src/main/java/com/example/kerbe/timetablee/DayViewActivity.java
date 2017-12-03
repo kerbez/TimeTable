@@ -51,7 +51,7 @@ public class DayViewActivity extends AppCompatActivity {
         n_d_i = (ImageView) findViewById(R.id.n_d_i);
         ex_d_i = (ImageView) findViewById(R.id.ex_d_i);
         fin_d_i = (ImageView) findViewById(R.id.fin_d_i);
-        refresh = (ImageView) findViewById(R.id.refresh);
+       // refresh = (ImageView) findViewById(R.id.refresh);
         gv_d = (GridView) findViewById(R.id.gv_day);
 
         ad = new ArrayAdapter<String>(mA, R.layout.item_d, R.id.tx_d, s);
@@ -63,14 +63,6 @@ public class DayViewActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(DayViewActivity.this, PlusActivity.class);
                 startActivity(intent);
-            }
-        });
-        refresh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent in = new Intent(DayViewActivity.this, DayViewActivity.class);
-                startActivity(in);
-
             }
         });
         dv_d_i.setOnClickListener(new View.OnClickListener() {
@@ -123,6 +115,8 @@ public class DayViewActivity extends AppCompatActivity {
                     List<DandW> dws = db.getAllDandW();
                     Log.d("hey", db.getDWCount() + "");
                     Log.d("intry", "all dws taken");
+                    s.clear();
+                    ids.clear();
                     for (DandW a : dws) {
                         Log.d("hey", days[position] + " ?= " + a.getDay());
                         if(a.getDay().equals(days[position])){
