@@ -1,4 +1,4 @@
-package com.example.kerbe.timetablee;
+package com.nyarr.kerbe.timetablee;
 
 /**
  * Created by kerbe on 30.11.2017.

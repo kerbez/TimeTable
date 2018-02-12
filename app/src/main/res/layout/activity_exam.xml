@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
-tools:context="com.example.kerbe.timetablee.ExamActivity">
+tools:context="com.nyarr.kerbe.timetablee.ExamActivity">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="0dp"
@@ -14,14 +14,23 @@ tools:context="com.example.kerbe.timetablee.ExamActivity">
     android:orientation="horizontal"
     >
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_weight="14"
         android:text="tasks"
         android:textSize="20sp"
         android:textColor="#fff"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
         />
+    <TextView
+        android:id="@+id/e_plus"
+        android:textColor="#fff"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="+"
+        android:textSize="20sp"/>
 </LinearLayout>
 <GridView
     android:id="@+id/gv_e_t"
@@ -107,15 +116,6 @@ tools:context="com.example.kerbe.timetablee.ExamActivity">
         android:layout_weight="1"
         android:layout_height="match_parent"
         android:src="@drawable/exam"/>
-    <ImageView
-        android:paddingBottom="5dp"
-        android:paddingRight="10dp"
-        android:paddingLeft="10dp"
-        android:id="@+id/fin_e_i"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:src="@drawable/fin" />
 
 </LinearLayout>
 

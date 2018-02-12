@@ -1,4 +1,4 @@
-package com.example.kerbe.timetablee;
+package com.nyarr.kerbe.timetablee;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteException;
@@ -9,7 +9,6 @@ import android.graphics.Color;
         import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-        import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
         import android.widget.GridView;
@@ -38,7 +37,6 @@ public class NoteActivity extends AppCompatActivity {
         wv_n_i = (ImageView) findViewById(R.id.wv_n_i);
         n_n_i = (ImageView) findViewById(R.id.n_n_i);
         ex_n_i = (ImageView) findViewById(R.id.ex_n_i);
-        fin_n_i = (ImageView) findViewById(R.id.fin_n_i);
         gv_n_l = (GridView) findViewById(R.id.gv_n_l);
         gv_n_b = (GridView) findViewById(R.id.gv_n_b);
 
@@ -60,12 +58,7 @@ public class NoteActivity extends AppCompatActivity {
                     little.add(a.getDes());
                     id_l.add(a.getId());
                 }
-
-
-
-
-                //Log.d("infor", "here");
-                String log = "id = " + a.getId() + ", des = " + a.getDes() + ", day = " + a.getType();
+             String log = "id = " + a.getId() + ", des = " + a.getDes() + ", day = " + a.getType();
                 Log.d("hey ::", log);
             }
             ad_l = new ArrayAdapter<String>(this, R.layout.item_notes, R.id.tx_n, little);
@@ -97,8 +90,9 @@ public class NoteActivity extends AppCompatActivity {
         slony_plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(NoteActivity.this, NotePlusActivity.class);
-                startActivity(in);
+                Intent intent = new Intent(NoteActivity.this, NotePlusActivity.class);
+                intent.putExtra("a", "0");
+                startActivity(intent);
             }
         });
         dv_n_i.setOnClickListener(new View.OnClickListener() {
@@ -129,14 +123,6 @@ public class NoteActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(NoteActivity.this, ExamActivity.class);
-                startActivity(in);
-
-            }
-        });
-        fin_n_i.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(NoteActivity.this, FinActivity.class);
                 startActivity(in);
 
             }

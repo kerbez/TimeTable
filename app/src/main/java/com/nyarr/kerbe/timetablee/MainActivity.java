@@ -1,4 +1,4 @@
-package com.example.kerbe.timetablee;
+package com.nyarr.kerbe.timetablee;
 
 
 import android.content.Intent;
@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         wv_i = (ImageView) findViewById(R.id.wv_i);
         n_i = (ImageView) findViewById(R.id.n_i);
         ex_i = (ImageView) findViewById(R.id.ex_i);
-        fin_i = (ImageView) findViewById(R.id.fin_i);
 
 
         dv_i.setOnClickListener(new View.OnClickListener() {
@@ -56,14 +55,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(MainActivity.this, ExamActivity.class);
-                startActivity(in);
-
-            }
-        });
-        fin_i.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(MainActivity.this, FinActivity.class);
                 startActivity(in);
 
             }

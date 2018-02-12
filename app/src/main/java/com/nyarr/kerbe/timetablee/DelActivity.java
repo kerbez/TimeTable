@@ -1,4 +1,4 @@
-package com.example.kerbe.timetablee;
+package com.nyarr.kerbe.timetablee;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

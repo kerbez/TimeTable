@@ -1,4 +1,4 @@
-package com.example.kerbe.timetablee;
+package com.nyarr.kerbe.timetablee;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteException;
@@ -86,6 +86,7 @@ public class WeekViewActivity extends AppCompatActivity {
             Log.d("intry", "all dws taken");
             for (DandW a : dws) {
                 int pos = m.get(a.getHour()) * 8 - m_d.get(a.getDay());
+                if(ids[pos] != 0){continue;}
                 ids[pos] = a.getId();
                 data[pos] = a.getDes();
                 adapter_week = new ArrayAdapter<String>(this, R.layout.item, R.id.tx, data);
@@ -103,7 +104,6 @@ public class WeekViewActivity extends AppCompatActivity {
         wv_w_i = (ImageView) findViewById(R.id.wv_w_i);
         n_w_i = (ImageView) findViewById(R.id.n_w_i);
         ex_w_i = (ImageView) findViewById(R.id.ex_w_i);
-        fin_w_i = (ImageView) findViewById(R.id.fin_w_i);
 
         dv_w_i.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -133,14 +133,6 @@ public class WeekViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(WeekViewActivity.this, ExamActivity.class);
-                startActivity(in);
-
-            }
-        });
-        fin_w_i.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(WeekViewActivity.this, FinActivity.class);
                 startActivity(in);
 
             }

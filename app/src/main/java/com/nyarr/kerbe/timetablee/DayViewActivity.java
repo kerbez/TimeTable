@@ -1,4 +1,4 @@
-package com.example.kerbe.timetablee;
+package com.nyarr.kerbe.timetablee;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteException;
@@ -14,7 +14,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -50,7 +49,6 @@ public class DayViewActivity extends AppCompatActivity {
         dv_d_i = (ImageView) findViewById(R.id.dv_d_i);
         n_d_i = (ImageView) findViewById(R.id.n_d_i);
         ex_d_i = (ImageView) findViewById(R.id.ex_d_i);
-        fin_d_i = (ImageView) findViewById(R.id.fin_d_i);
        // refresh = (ImageView) findViewById(R.id.refresh);
         gv_d = (GridView) findViewById(R.id.gv_day);
 
@@ -93,14 +91,6 @@ public class DayViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(DayViewActivity.this, ExamActivity.class);
-                startActivity(in);
-
-            }
-        });
-        fin_d_i.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(DayViewActivity.this, FinActivity.class);
                 startActivity(in);
 
             }

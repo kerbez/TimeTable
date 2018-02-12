@@ -1,4 +1,4 @@
-package com.example.kerbe.timetablee;
+package com.nyarr.kerbe.timetablee;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

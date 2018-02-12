@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ECEFEF"
-    tools:context="com.example.kerbe.timetablee.DayViewActivity">
+    tools:context="com.nyarr.kerbe.timetablee.DayViewActivity">
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -97,15 +97,6 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/exam"/>
-        <ImageView
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/fin_d_i"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:src="@drawable/fin" />
 
     </LinearLayout>
 </LinearLayout>
